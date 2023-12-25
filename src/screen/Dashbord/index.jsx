@@ -12,6 +12,7 @@ import {Profile, logo} from '../../assets/image';
 import HomeProfile from '../../component/HomeProfile';
 import HomeGridSection from '../../component/HomeGrid';
 import {Homegrid} from '../../Value/Homegrid';
+import Slider from '../../component/Silder';
 
 const Dashbord = ({navigation}) => {
   const {width, height} = useWindowDimensions();
@@ -19,6 +20,9 @@ const Dashbord = ({navigation}) => {
     <View style={{flex: 1}}>
       <Header title="Dashbord" />
       <HomeProfile />
+      <View style={{marginHorizontal: 10}}>
+        <Slider />
+      </View>
       <View style={{marginHorizontal: 10, marginVertical: 20}}>
         <HomeGridSection data={Homegrid} />
       </View>

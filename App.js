@@ -6,6 +6,7 @@ import 'react-native-gesture-handler';
 import Dashbord from './src/screen/Dashbord';
 import Login from './src/screen/Login';
 import {MainColor} from './src/Value/Color';
+import MyDirect from './src/screen/MyDirect';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -21,6 +22,11 @@ const App = () => {
         <Stack.Screen
           name="Dashbord"
           component={Dashbord}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="MyDirect"
+          component={MyDirect}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
